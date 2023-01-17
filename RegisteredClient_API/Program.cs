@@ -3,7 +3,7 @@ using RegisteredClient_API;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add configuration to the container.
-builder.Configuration.AddJsonFile("appSecrets.json", optional: false, reloadOnChange: true);
+builder.Configuration.AddJsonFile("Properties/appSecrets.json", optional: false, reloadOnChange: true);
 builder.Configuration.AddEnvironmentVariables();
 
 // Add services to the container.
